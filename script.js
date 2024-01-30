@@ -79,17 +79,11 @@ let weather_api = {
         deleteButton.parentElement.remove();
         let index = this.favoritesCities.indexOf(cityName)
         this.favoritesCities.splice(index,1);
-    },
-    getFavCityWeather: async function () {
-        let favList = localStorage.getItem('favList');
-        if(!favList) {
-            return
-        }
-        await this.getCurrentWeather(favList[0]);
     }
-
 }
 
-document.addEventListener("DOMContentLoaded", async function () {
-    await getFavCityWeather();
+document.addEventListener("DOMContentLoaded",  function () {
+    weather_api.favoritesCities = JSON.parse(localStorage.getItem('favCity')) || [];
+    weather_api.updateFavList()
+
 })
