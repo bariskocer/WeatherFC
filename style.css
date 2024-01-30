@@ -1,0 +1,119 @@
+body {
+    background-image: url(weatherPic.webp);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ECEFF1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    max-width: 960px;
+}
+
+.left-side, .right-side {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.left-side {
+    margin-right: 20px;
+}
+
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 90px); /* Adjust based on button width */
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.weather-result {
+    min-height: 100px; /* Ensures the div is visible even when empty */
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Style for the list of favorite cities if you add it */
+.favorite-cities-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-cities-list li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #EEE;
+}
+
+.favorite-cities-list li:last-child {
+    border-bottom: none;
+}
+
+.favorite-cities-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.favButton {
+    margin-right: 5px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: lightcoral;
+    font-size: bold;
+}
+
+.favButton:hover {
+    background-color: rgb(243, 98, 98);
+}
+.deleteButton {
+    border-radius: 20px;
+    padding: 5px;
+    background-color: red;
+}
+
+.deleteButton:hover {
+    background-color: rgb(155, 31, 31);
+}

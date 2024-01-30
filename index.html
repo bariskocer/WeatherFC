@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="resetCSS.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather ForeCast</h1>
+    </header>
+    
+    <div class="container">
+        <div class="left-side">
+            <div class="search-box">
+                <input type="text" id="js-search" placeholder="Enter the city">
+                <button onclick="weather_api.getCurrentWeather()">Search</button>
+            </div>
+            <div class="weather-result"></div>
+        </div>
+
+        <div class="right-side">
+            <h2>Favorite Cities</h2>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
